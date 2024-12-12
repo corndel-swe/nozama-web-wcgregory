@@ -35,12 +35,12 @@ experience.
 
 ### Identify and document problems
 
-- [ ] List all the design, accessibility, and technical issues you find in the
+- [x] List all the design, accessibility, and technical issues you find in the
       provided code.
 
 ### Refactor for maintainability
 
-- [ ] Remove inline CSS and use CSS files.
+- [x] Remove inline CSS and use CSS files.
 
 - [ ] Replace hardcoded values with custom properties.
 

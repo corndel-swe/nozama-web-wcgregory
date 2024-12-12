@@ -1,18 +1,71 @@
 /* No consistency in CSS classes, inline styles dominate */
+
+:root {
+  /*FONTS*/
+  --font-primary: Arial, sans-serif;
+  --font-secondary: Verdana;
+  --font-size-large: 18px;
+  --font-size-medium: 12px;
+  --line-solid: solid;
+  
+  /*ALIGNMENT & SPACING*/
+  --align-center: center;
+  --align-top: top;
+  --align-bottom: bottom;
+  --align-left: left;
+  --align-right: right;
+  --px-standard: 10px;
+  --px-small: 1px;
+  --px-large: 20px;
+  --px-massive: 100px;
+  --px-super-massive: 300px;
+
+  /*COLOURS*/
+  --colour-light-grey: #f5f5f5;
+  --colour-grey: #e0e0e0;
+  --colour-dark-blue: darkblue;
+  --colour-black: black;
+}
+
 body {
-  background-color: #f5f5f5;
-  font-family: Arial, sans-serif;
+  background-color: var(--colour-light-grey);
+  font-family: var(--font-primary);
 }
 
 header {
-  text-align: center;
-  padding: 10px;
-  background-color: #e0e0e0;
+  text-align: var(--align-center);
+  padding: var(--px-standard);
+  background-color: var(--colour-grey);
+}
+
+h1 {
+  color: var(--colour-dark-blue);
+}
+
+h2 {
+  color: var(--colour-dark-blue);
+  font-size: var(--font-size-large);
+}
+
+img {
+  width: var(--px-massive);
+}
+
+p {
+  font-size: var(--font-size-medium)
 }
 
 .product {
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-  width: 300px; /* Not responsive */
+  border: var(--px-small) var(--line-solid) var(--colour-black);
+  margin: var(--px-standard);
+  padding: var(--px-standard);
+  width: var(--px-super-massive); /* Not responsive */
+}
+
+.price {
+  font: green;
+}
+
+.rating {
+  font: var(--font-secondary);
 }
