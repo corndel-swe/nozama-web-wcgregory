@@ -3,6 +3,7 @@
 :root {
   /*FONTS*/
   --font-primary: Arial, sans-serif;
+  --font-secondary: Verdana;
   --font-size-large: 18px;
   --font-size-medium: 12px;
   --line-solid: solid;
@@ -59,4 +60,12 @@ p {
   margin: var(--px-standard);
   padding: var(--px-standard);
   width: var(--px-super-massive); /* Not responsive */
+}
+
+.price {
+  font: green;
+}
+
+.rating {
+  font: var(--font-secondary);
 }
